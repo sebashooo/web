@@ -1,0 +1,129 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #4527a0; /* Morado oscuro */
+    color: #fff;
+    padding: 15px 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    margin: 0;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+/* Estilos para el menú de navegación */
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #d1c4e9; /* Un tono más claro de morado */
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 20px 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Estilos para las marcas de productos */
+.marcas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.marca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.marca img {
+    width: 150px; /* Ancho fijo para las imágenes */
+    height: auto;
+    display: block;
+    margin-bottom: 10px; /* Espacio entre la imagen y el nombre */
+    border-radius: 5px;
+}
+
+.nombre-marca {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.marca:hover {
+    transform: translateY(-5px); /* Efecto de elevación al hacer hover */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #4527a0; /* Morado oscuro */
+    color: #fff;
+    text-align: center;
+    padding: 0.1px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos adicionales para mejorar la experiencia móvil */
+@media (max-width: 768px) {
+    .marca {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+    .marca img {
+        width: 120px; /* Reducir el tamaño de la imagen en dispositivos móviles */
+    }
+    .nombre-marca {
+        font-size: 1em; /* Reducir el tamaño del nombre de la marca en dispositivos móviles */
+    }
+}
